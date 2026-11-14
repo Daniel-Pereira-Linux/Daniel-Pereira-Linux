@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250" width="600" height="250" role="img" aria-label="Upstream">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1224"/><stop offset="1" stop-color="#05070f"/></linearGradient>
+<radialGradient id="gl" cx="100%" cy="0%" r="75%"><stop offset="0" stop-color="#8b5cf6" stop-opacity=".22"/><stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/></radialGradient>
+<linearGradient id="sw" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<filter id="glow" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="3.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<clipPath id="r"><rect x="2" y="2" width="596" height="246" rx="18"/></clipPath>
+</defs>
+<style>
+.t{font:800 30px system-ui,-apple-system,'Segoe UI',Inter,Roboto,Helvetica,Arial,sans-serif;fill:#fff;letter-spacing:-.6px}
+.d{font:400 17px system-ui,-apple-system,'Segoe UI',Inter,Roboto,Helvetica,Arial,sans-serif;fill:#a9b7d6}
+.l{font:500 14px ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,'Liberation Mono',monospace;fill:#c5d2ee}
+.f{font:500 14px ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,'Liberation Mono',monospace;fill:#8b5cf6}
+.run{fill:none;stroke:#8b5cf6;stroke-width:2.6;stroke-linecap:round;stroke-dasharray:150 1534;animation:run 6s linear infinite}
+@keyframes run{to{stroke-dashoffset:-1684}}
+.sw{animation:sw 6s ease-in-out infinite}
+@keyframes sw{0%,55%{transform:translateX(-320px)}100%{transform:translateX(640px)}}
+.hx{animation:pu 3s ease-in-out infinite}
+@keyframes pu{0%,100%{opacity:.45}50%{opacity:1}}
+</style>
+<rect x="2" y="2" width="596" height="246" rx="18" fill="url(#bg)" stroke="#1a2542" stroke-width="1.5"/>
+<g clip-path="url(#r)"><rect width="600" height="250" fill="url(#gl)"/>
+<rect class="sw" x="0" y="0" width="260" height="250" fill="url(#sw)" transform="skewX(-18)"/></g>
+<rect class="run" x="2" y="2" width="596" height="246" rx="18" filter="url(#glow)"/>
+<g transform="translate(50,56)" filter="url(#glow)"><polygon class="hx" points="13.0,7.5 0.0,15.0 -13.0,7.5 -13.0,-7.5 -0.0,-15.0 13.0,-7.5" fill="none" stroke="#8b5cf6" stroke-width="2.4"/>
+<polygon points="5.2,3.0 0.0,6.0 -5.2,3.0 -5.2,-3.0 -0.0,-6.0 5.2,-3.0" fill="#8b5cf6"/></g>
+<text x="80" y="67" class="t">Upstream</text>
+<circle cx="495.2" cy="57" r="5.5" fill="#8b5cf6"/>
+<text x="507.2" y="62" class="l" textLength="58.8" lengthAdjust="spacingAndGlyphs">patches</text>
+<text x="34" y="118" class="d">Linux kernel: mantenedor da documentação pt_BR.</text><text x="34" y="143" class="d">git-l10n/git-po: tradução do Git.</text><text x="34" y="168" class="d">apache/cloudstack: correções e backports.</text>
+<text x="34" y="222" class="f" textLength="285.6" lengthAdjust="spacingAndGlyphs">→ contribuições em outros projetos</text>
+</svg>

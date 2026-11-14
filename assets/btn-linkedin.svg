@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140.8 48" width="140.8" height="48" role="img" aria-label="LinkedIn">
+<style>
+.t{font:600 16px ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,'Liberation Mono',monospace;fill:#e8eefc}
+.run{fill:none;stroke:#2d7ff9;stroke-width:2.2;stroke-linecap:round;stroke-dasharray:60 302;animation:run 4s linear infinite}
+@keyframes run{to{stroke-dashoffset:-362}}
+</style>
+<rect x="2" y="2" width="136.8" height="44" rx="22" fill="#090e1c" stroke="#1a2542" stroke-width="1.5"/>
+<rect class="run" x="2" y="2" width="136.8" height="44" rx="22"/>
+<circle cx="24" cy="24.0" r="4.5" fill="#2d7ff9"/>
+<text x="40" y="29.5" class="t" textLength="76.8" lengthAdjust="spacingAndGlyphs">LinkedIn</text>
+</svg>

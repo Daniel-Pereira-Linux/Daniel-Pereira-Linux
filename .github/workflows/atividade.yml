@@ -1,0 +1,37 @@
+name: Atualizar a atividade
+
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [gerar.py]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: atividade
+  cancel-in-progress: true
+
+jobs:
+  gerar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Gerar os SVGs
+        env:
+          GITHUB_TOKEN: ${{ secrets.PERFIL_TOKEN || secrets.GITHUB_TOKEN }}
+        run: python3 gerar.py
+      - name: Gravar se mudou
+        run: |
+          git add assets
+          if git diff --cached --quiet; then
+            echo "sem mudança"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Atividade de $(date -u +%F)"
+          git push
